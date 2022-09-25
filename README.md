@@ -12,6 +12,7 @@ Sample NodeJS Express app with advanced architecture:
 - global error handling
 - async error handling
 - multiple database support
+- using sql parameters
 - .env configuration
 
 ## .env content
