@@ -3,10 +3,10 @@
 Sample NodeJS Express app with advanced architecture:
 
 - MVC structure
-- 3 layers architercture
-  - app layer - MVC controllers
-  - service layer - services with business logic
-  - data layer - multiple respositories implementation (MSSQL and MySQL)
+- three-tier architecture
+  - app tier - MVC controllers
+  - service tier - services with business logic
+  - data tier - multiple repositories implementation (MSSQL and MySQL)
 - classes and interfaces
 - async/await sql operations
 - global error handling
