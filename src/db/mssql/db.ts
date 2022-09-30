@@ -13,8 +13,14 @@ export default class MsSqlDatabase implements IDatabase {
   connect(): Promise<boolean> {
     return this.pool
       .connect()
-      .then((x) => true)
-      .catch((x) => false);
+      .then(() => {
+        console.log("db connected");
+        return true;
+      })
+      .catch((err) => {
+        console.error(`db failed to connect: ${err.message}`);
+        return false;
+      });
   }
 
   private query<T>(query: string, params?: any): Promise<sql.IResult<T>> {
